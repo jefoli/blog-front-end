@@ -15,15 +15,15 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body{
-    //2.4rem = 24 px
     font-size: 1.6rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: ${({ theme }) => theme.font.family.default};
+    color: ${({ theme }) => theme.colors.darkText};
   }
 
   h1, h2, h3, h4, h5 , h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: ${({ theme }) => theme.font.family.default};
     margin: ${({ theme }) => theme.spacings.large} 0;
-
+    font-weight: 800;
   }
 
   p{
@@ -36,7 +36,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a{
-    color: ${({ theme }) => theme.colors.secondaryColor}
+    color: ${({ theme }) => theme.colors.secondary};
   }
 
   .table {
