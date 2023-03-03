@@ -1,0 +1,235 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> should match snapshot 1`] = `
+.c6 {
+  color: #000000;
+  line-height: 1.2;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.c2 {
+  background: #000000;
+  padding: 3.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  max-width: 32rem;
+  height: 100 vh;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  left: 0;
+  overflow-y: auto;
+}
+
+.c3 {
+  margin: auto;
+  width: 100%;
+}
+
+.c4 .c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 4.8rem;
+}
+
+.c4 img {
+  border: 0.5rem solid #dc143c;
+}
+
+.c0 {
+  position: fixed;
+  top: 2.4rem;
+  color: #FFFFFF;
+  background: #000000;
+  z-index: 2;
+  width: 3rem;
+  heigth: 3rem;
+  left: 26rem;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  left: 26rem;
+  color: #dc143c;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c7 > img {
+  width: 15rem;
+  heigth: 15rem;
+  border-radius: 50%;
+}
+
+.c8 {
+  display: block;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin-bottom: 1.6rem;
+  font-size: 1.8rem;
+  border-right: 0.5rem solid #000000;
+  -webkit-trasition: all 300ms ease-in-out;
+  trasition: all 300ms ease-in-out;
+}
+
+.c8:hover {
+  border-right: 0.5rem solid #dc143c;
+  color: #dc143c;
+}
+
+@media (max-width:768px) {
+  .c2 {
+    left: 0;
+  }
+}
+
+@media (max-width:768px) {
+  .c0 {
+    left: 26rem;
+  }
+}
+
+<div>
+  <a
+    aria-label="Open or close menu"
+    class="c0"
+    href="#"
+    title="Open or close menu"
+  >
+    <svg
+      aria-hidden="true"
+      aria-label="Close menu"
+      class="c1"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+      />
+    </svg>
+  </a>
+  <div
+    aria-hidden="false"
+    class="c2"
+  >
+    <nav
+      class="c3"
+    >
+      <div
+        class="c4"
+      >
+        <h1
+          class="c5 c6"
+        >
+          <a
+            href="/"
+          >
+            <a
+              class="c7"
+              target="_self"
+            >
+              <img
+                alt="Jeferson Oliveira"
+                src="/assets/images/person.jpg"
+              />
+            </a>
+          </a>
+        </h1>
+      </div>
+      <a
+        href="/home/1"
+      >
+        <div
+          class="c8"
+          target="_self"
+        >
+          My jobs
+        </div>
+      </a>
+      <a
+        href="/home/2"
+      >
+        <div
+          class="c8"
+          target="_self"
+        >
+          My jobs
+        </div>
+      </a>
+      <a
+        href="/home/3"
+      >
+        <div
+          class="c8"
+          target="_self"
+        >
+          My jobs
+        </div>
+      </a>
+      <a
+        href="/home/4"
+      >
+        <div
+          class="c8"
+          target="_self"
+        >
+          My jobs
+        </div>
+      </a>
+      <a
+        href="/home/5"
+      >
+        <div
+          class="c8"
+          target="_self"
+        >
+          My jobs
+        </div>
+      </a>
+      <a
+        href="/home/6"
+      >
+        <div
+          class="c8"
+          target="_self"
+        >
+          My jobs
+        </div>
+      </a>
+    </nav>
+  </div>
+</div>
+`;

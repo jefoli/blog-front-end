@@ -3,12 +3,14 @@
 exports[`<Header /> should match snapshot 1`] = `
 .c2 {
   color: #000000;
+  line-height: 1.2;
   font-size: 1.6rem;
   text-transform: uppercase;
 }
 
 .c5 {
   color: #000000;
+  line-height: 1.2;
   font-size: 1.6rem;
   text-transform: none;
 }

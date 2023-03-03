@@ -4,13 +4,13 @@ import { formatDate } from '../../utils/format.data';
 import * as Styled from './styles';
 
 export type ArticleMetaProps = {
-  creatAt: string;
+  createdAt: string;
   author: Author;
   categories: Category[];
 };
 
 export const ArticleMeta = ({
-  creatAt,
+  createdAt,
   author,
   categories,
 }: ArticleMetaProps) => {
@@ -19,7 +19,7 @@ export const ArticleMeta = ({
       <p>
         <span>Por</span>
         <a href={`/author/${author.slug}`}>{author.displayName}</a>
-        <time dateTime={creatAt}>{formatDate(creatAt)}</time>
+        <time dateTime={createdAt}>{formatDate(createdAt)}</time>
         <span className="separator"> | </span>
 
         <span className="categories">

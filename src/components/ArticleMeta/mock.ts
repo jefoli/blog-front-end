@@ -1,7 +1,7 @@
 import { ArticleMetaProps } from '.';
 
 export default {
-  creatAt: '2021-03-02T15:16:09.246+00:00',
+  createdAt: '2021-03-02T15:16:09.246+00:00',
   author: {
     id: '123456',
     slug: 'jeferson-oliveira',
