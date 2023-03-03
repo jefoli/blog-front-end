@@ -13,7 +13,11 @@ describe('<HtmlContent />', () => {
     expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
         font-size: calc(1.6rem + 0.2rem);
-        line-heigt: 1.5;
+        line-height: 1.5;
+      }
+
+      .c0 iframe[src*='ads'] {
+        display: none;
       }
 
       .c0 p {
@@ -33,31 +37,6 @@ describe('<HtmlContent />', () => {
       .c0 a:hover {
         -webkit-filter: brightness(50%);
         filter: brightness(50%);
-      }
-
-      .c0 code {
-        font-family: monospace;
-        color: #dc143c;
-        font-size: 1.6rem;
-        background: #DDDDDD;
-        padding: 0.2rem;
-        margin: 0.2rem;
-      }
-
-      .c0 pre {
-        background: #000000;
-        padding: 2.4rem;
-        font-family: monospace;
-        color: #FFFFFF;
-        margin: 2.4rem 0;
-        width: 100%;
-        overflow-x: auto;
-        font-size: 1.6rem;
-      }
-
-      .c0 pre code {
-        color: inherit;
-        background: inherit;
       }
 
       .c0 img {
@@ -80,7 +59,7 @@ describe('<HtmlContent />', () => {
       .c0 .image-style-side {
         max-width: 50%;
         float: right;
-        margin: 2.4rem;
+        margin: 2.4rem 0;
       }
 
       .c0 hr {
@@ -101,7 +80,7 @@ describe('<HtmlContent />', () => {
 
       .c0 table {
         width: 100%;
-        border: collapse;
+        border-collapse: collapse;
         margin: 2.4rem 0;
       }
 

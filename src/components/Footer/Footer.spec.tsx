@@ -9,7 +9,11 @@ describe('<Footer />', () => {
     expect(container).toMatchInlineSnapshot(`
       .c1 {
         font-size: calc(1.6rem + 0.2rem);
-        line-heigt: 1.5;
+        line-height: 1.5;
+      }
+
+      .c1 iframe[src*='ads'] {
+        display: none;
       }
 
       .c1 p {
@@ -29,31 +33,6 @@ describe('<Footer />', () => {
       .c1 a:hover {
         -webkit-filter: brightness(50%);
         filter: brightness(50%);
-      }
-
-      .c1 code {
-        font-family: monospace;
-        color: #dc143c;
-        font-size: 1.6rem;
-        background: #DDDDDD;
-        padding: 0.2rem;
-        margin: 0.2rem;
-      }
-
-      .c1 pre {
-        background: #000000;
-        padding: 2.4rem;
-        font-family: monospace;
-        color: #FFFFFF;
-        margin: 2.4rem 0;
-        width: 100%;
-        overflow-x: auto;
-        font-size: 1.6rem;
-      }
-
-      .c1 pre code {
-        color: inherit;
-        background: inherit;
       }
 
       .c1 img {
@@ -76,7 +55,7 @@ describe('<Footer />', () => {
       .c1 .image-style-side {
         max-width: 50%;
         float: right;
-        margin: 2.4rem;
+        margin: 2.4rem 0;
       }
 
       .c1 hr {
@@ -97,7 +76,7 @@ describe('<Footer />', () => {
 
       .c1 table {
         width: 100%;
-        border: collapse;
+        border-collapse: collapse;
         margin: 2.4rem 0;
       }
 
