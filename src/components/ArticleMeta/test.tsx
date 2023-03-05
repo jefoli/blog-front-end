@@ -29,12 +29,19 @@ describe('<ArticleMeta />', () => {
     renderTheme(<ArticleMeta {...props} />);
     expect(screen.getByText('2 de mar. de 2021')).toHaveAttribute(
       'datetime',
-      props.creatAt,
+      props.createdAt,
     );
   });
 
   it('should to match snapshot', () => {
     const { container } = renderTheme(<ArticleMeta {...props} />);
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should to match snapshot with no author and categories', () => {
+    const { container } = renderTheme(
+      <ArticleMeta {...props} author={undefined} categories={undefined} />,
+    );
     expect(container).toMatchSnapshot();
   });
 });
