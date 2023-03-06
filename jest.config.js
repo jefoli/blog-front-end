@@ -6,6 +6,8 @@ module.exports = {
     '!<rootDir>/src/*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/**/*mock*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/styles/**/*.{js,jsx,ts,tsx}',
+    '!<rootDir>/src/shared-typed/**/*.{js,jsx,ts,tsx}',
+
     '!<rootDir>/src/config/**/*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/pages/**/*.{js,jsx,ts,tsx}',
     '!<rootDir>/**/stories.{js,jsx,ts,tsx}',
