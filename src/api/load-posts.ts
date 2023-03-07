@@ -30,7 +30,7 @@ export const defaultLoadPostsVariables: LoadPostsVariables = {
 export const loadPosts = async (
   variables: LoadPostsVariables = {},
 ): Promise<StrapiPostAndSettings> => {
-  const data = await request(config.graphqURL, GRAPHQL_QUERY, {
+  const data = await request(config.graphqLURL, GRAPHQL_QUERY, {
     ...defaultLoadPostsVariables,
     ...variables,
   });

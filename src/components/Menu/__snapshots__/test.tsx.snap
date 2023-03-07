@@ -231,5 +231,6 @@ exports[`<Menu /> should match snapshot 1`] = `
       </a>
     </nav>
   </div>
+  ;
 </div>
 `;

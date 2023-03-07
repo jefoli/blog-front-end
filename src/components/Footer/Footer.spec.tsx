@@ -132,6 +132,7 @@ describe('<Footer />', () => {
             </h1>
           </div>
         </footer>
+        ;
       </div>
     `);
   });

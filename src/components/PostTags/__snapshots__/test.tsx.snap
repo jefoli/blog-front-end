@@ -3,6 +3,8 @@
 exports[`<PostTags /> should match snapshot 1`] = `
 .c1 {
   margin: 2.4rem 0;
+  max-width: 80rem;
+  padding: 0 3.2rem 0;
 }
 
 .c1 span {
@@ -53,7 +55,12 @@ transition:all 300ms ease-in-out .c0 a:hover {
       </a>
     </span>
   </p>
+  ;
 </div>
 `;
 
-exports[`<PostTags /> should match snapshot with no tags 1`] = `<div />`;
+exports[`<PostTags /> should match snapshot with no tags 1`] = `
+<div>
+  ;
+</div>
+`;
