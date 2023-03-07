@@ -3,7 +3,7 @@ import { BaseTemplate } from '../Base';
 import { PostStrapi } from '../../shared-typed/post-strapi';
 import { SettingsStrapi } from '../../shared-typed/settings-strapi';
 import { PostGrid } from '../../components/PostGrid';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { loadPosts, LoadPostsVariables } from '../../api/load-posts';
 
 export type PostsTemplateProps = {
@@ -21,6 +21,13 @@ export const PostsTemplate = ({
   const [stateVariables, setStateVariables] = useState(variables);
   const [buttonDisabled, SetButtonDisabled] = useState(false);
   const [noMorePosts, setNoMorePosts] = useState(false);
+
+  useEffect(() => {
+    setStatePosts(posts);
+    setNoMorePosts(false);
+    SetButtonDisabled(false);
+    setStateVariables(variables);
+  }, [posts, variables]);
 
   const handleLoadMorePosts = async () => {
     SetButtonDisabled(true);
