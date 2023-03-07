@@ -46,11 +46,17 @@ export const PostsTemplate = ({
   return (
     <BaseTemplate settings={settings}>
       <PostGrid posts={statePosts} />
-      <Styled.ButtonContainer>
-        <Styled.Button onClick={handleLoadMorePosts} disabled={buttonDisabled}>
-          {noMorePosts ? 'Sem posts' : 'Carregar mais'}
-        </Styled.Button>
-      </Styled.ButtonContainer>
+
+      {statePosts && statePosts.length ? (
+        <Styled.ButtonContainer>
+          <Styled.Button
+            onClick={handleLoadMorePosts}
+            disabled={buttonDisabled}
+          >
+            {noMorePosts ? 'Sem posts' : 'Carregar mais'}
+          </Styled.Button>
+        </Styled.ButtonContainer>
+      ) : null}
     </BaseTemplate>
   );
 };
