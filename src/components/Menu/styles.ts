@@ -4,7 +4,6 @@ import { Title as headingStyles } from '../Heading/styles';
 
 type MenuBehaviorProps = {
   menuVisible: boolean;
-  theme: DefaultTheme;
 };
 
 const wrapperChanger = (
@@ -28,7 +27,7 @@ export const Wrapper = styled.div<MenuBehaviorProps>`
     z-index: 1;
     width: 100%;
     max-width: 32rem;
-    height: 100 vh;
+    height: 100vh;
     top: 0;
     left: 0;
     transition: all 300ms ease-in-out;
@@ -49,10 +48,10 @@ export const Logo = styled.div`
       justify-content: center;
       margin: 0;
       margin-bottom: ${theme.spacings.xxlarge};
-    }
 
-    img {
-      border: 0.5rem solid ${theme.colors.secondary};
+      img {
+        border: 0.5rem solid ${theme.colors.secondary};
+      }
     }
   `}
 `;

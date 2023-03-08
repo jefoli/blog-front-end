@@ -19,7 +19,7 @@ describe('<Menu />', () => {
 
     expect(screen.queryByLabelText('Close menu')).not.toBeInTheDocument();
 
-    expect(screen.queryAllByRole('navigation')).not.toBeInTheDocument();
+    expect(screen.queryByRole('navigation')).not.toBeInTheDocument();
   });
 
   it('should Open/close Menu on button click', () => {
@@ -35,9 +35,9 @@ describe('<Menu />', () => {
 
     expect(screen.getByRole('navigation')).toBeInTheDocument();
 
-    expect(screen.getByRole('heading', { name: 'Jeferson Oliveira' }));
+    expect(screen.getByRole('heading', { name: 'Otávio Miranda' }));
 
-    expect(screen.getByRole('img', { name: 'Jeferson Oliveira' }));
+    expect(screen.getByRole('img', { name: 'Otávio Miranda' }));
 
     expect(
       screen.getByRole('navigation').querySelectorAll('a:not([href="/"])'),

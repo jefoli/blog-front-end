@@ -9,7 +9,9 @@ export const ToggleTheme = () => {
   useEffect(() => {
     const localTheme = localStorage.getItem('theme');
     if (!localTheme) return;
+
     const newTheme = JSON.parse(localTheme);
+
     if (newTheme.name === 'inverted') {
       setChecked(true);
     }

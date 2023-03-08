@@ -1,8 +1,9 @@
 import { HeaderProps } from '.';
 
 export default {
-  blogName: 'Jeferson Oliveira',
-  blogDescription: 'lorem dir hasudhadhudhaudhadhaduahddadddd',
-  logo: 'assets/images/person.jpg',
+  blogName: 'Otávio Miranda',
+  blogDescription:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+  logo: '/assets/images/logo.png',
   showText: true,
 } as HeaderProps;

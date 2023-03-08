@@ -30,7 +30,7 @@ describe('<Heading />', () => {
     const heading = screen.getByRole('heading', { name: 'texto' });
 
     expect(heading).toHaveStyle({
-      'font-size': theme.font.sizes.small,
+      'font-size': theme.font.sizes.medium,
     });
 
     rerender(
@@ -50,7 +50,7 @@ describe('<Heading />', () => {
     );
 
     expect(screen.getByRole('heading', { name: 'texto' })).toHaveStyle({
-      'font-size': theme.font.sizes.medium,
+      'font-size': theme.font.sizes.large,
     });
 
     rerender(

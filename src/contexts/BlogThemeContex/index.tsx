@@ -1,5 +1,5 @@
-import { DefaultTheme, ThemeProvider } from 'styled-components';
 import React, { createContext, useCallback, useEffect, useState } from 'react';
+import { DefaultTheme, ThemeProvider } from 'styled-components';
 import { theme } from '../../styles/theme';
 
 export type BlogThemeProviderProps = {
@@ -34,9 +34,9 @@ export const BlogThemeProvider = ({ children }: BlogThemeProviderProps) => {
         const newTheme = {
           ...theme,
           name: 'inverted',
-          color: {
+          colors: {
             primary: '#FFFFFF',
-            darkText: 'F9F9F9',
+            darkText: '#F9f9f9',
             secondary: '#dc143c',
             white: '#000000',
             mediumGray: '#f9f9f9',
@@ -54,7 +54,7 @@ export const BlogThemeProvider = ({ children }: BlogThemeProviderProps) => {
     <BlogThemeContext.Provider
       value={{ theme: blogTheme, setTheme: handleSetTheme }}
     >
-      <ThemeProvider theme={blogTheme}>{children}</ThemeProvider>;
+      <ThemeProvider theme={blogTheme}>{children}</ThemeProvider>
     </BlogThemeContext.Provider>
   );
 };

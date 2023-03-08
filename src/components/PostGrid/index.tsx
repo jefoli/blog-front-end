@@ -9,7 +9,7 @@ export const PostGrid = ({ posts = [] }: PostGridProps) => {
   return (
     <Styled.Wrapper>
       {posts.length === 0 && (
-        <Styled.NotFound>Nehum post encontrado!</Styled.NotFound>
+        <Styled.NotFound>Nenhum post encontrado!</Styled.NotFound>
       )}
 
       <Styled.Grid>

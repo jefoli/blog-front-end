@@ -1,20 +1,19 @@
+import { screen } from '@testing-library/react';
 import { renderTheme } from '../../styles/render-theme';
 import { Header } from '.';
+
 import props from './mock';
-import { screen } from '@testing-library/react';
 
 describe('<Header />', () => {
   it('should render an image, a heading and text', () => {
     renderTheme(<Header {...props} showText={undefined} />);
 
     expect(
-      screen.getByRole('heading', { name: 'Jeferson Oliveira' }),
+      screen.getByRole('heading', { name: props.blogName }),
     ).toBeInTheDocument();
-
     expect(
-      screen.getByRole('img', { name: /Jeferson Oliveira/i }),
+      screen.getByRole('img', { name: /Otávio Miranda/i }),
     ).toHaveAttribute('src', props.logo);
-
     expect(screen.getByText(props.blogDescription)).toBeInTheDocument();
   });
 
@@ -22,11 +21,10 @@ describe('<Header />', () => {
     renderTheme(<Header {...props} showText={false} />);
 
     expect(
-      screen.queryByRole('heading', { name: 'Jeferson Oliveira' }),
+      screen.queryByRole('heading', { name: 'Otávio Miranda' }),
     ).not.toBeInTheDocument();
-
     expect(
-      screen.queryByRole('heading', { name: /Jeferson Oliveira/i }),
+      screen.getByRole('img', { name: /Otávio Miranda/i }),
     ).toHaveAttribute('src', props.logo);
     expect(screen.queryByRole(props.blogDescription)).not.toBeInTheDocument();
   });
@@ -35,6 +33,7 @@ describe('<Header />', () => {
     const { container } = renderTheme(
       <Header {...props} showText={undefined} />,
     );
+
     expect(container).toMatchSnapshot();
   });
 });

@@ -6,47 +6,56 @@ export const GRAPHQL_FRAGMENTS = gql`
     alternativeText
     url
   }
+
   fragment cover on Post {
     cover {
       ...image
     }
   }
+
   fragment tag on Tag {
     id
     displayName
     slug
   }
+
   fragment author on Author {
     id
     displayName
     slug
   }
+
   fragment category on Category {
     id
     displayName
     slug
   }
+
   fragment tags on Post {
     tags {
       ...tag
     }
   }
+
   fragment authorPost on Post {
     author {
       ...author
     }
   }
+
   fragment categories on Post {
     categories {
       ...category
     }
   }
+
   fragment menuLink on ComponentMenuMenuLink {
     id
     link
     text
     newTab
   }
+
   fragment post on Post {
     id
     slug
@@ -60,6 +69,7 @@ export const GRAPHQL_FRAGMENTS = gql`
     ...tags
     ...authorPost
   }
+
   fragment settings on Settings {
     id
     blogName

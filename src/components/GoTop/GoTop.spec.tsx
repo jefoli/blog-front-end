@@ -60,7 +60,6 @@ describe('<GoTop />', () => {
             />
           </svg>
         </a>
-        ;
       </div>
     `);
   });

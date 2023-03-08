@@ -18,6 +18,21 @@ exports[`<ToggleTheme /> should render input and toggle between theme when toggl
   color: rgba(0,0,0,0);
 }
 
+.c5:checked + .c3 {
+  background: #dc143c;
+}
+
+.c5:focus + .c3 {
+  box-shadow: 0 0 1px solid #dc143c;
+}
+
+.c5:checked + .c3:before {
+  -webkit-transform: translateX(1.9rem);
+  -ms-transform: translateX(1.9rem);
+  transform: translateX(1.9rem);
+  background: #000000;
+}
+
 .c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -39,7 +54,7 @@ exports[`<ToggleTheme /> should render input and toggle between theme when toggl
   -webkit-transform: translateX(1.9rem);
   -ms-transform: translateX(1.9rem);
   transform: translateX(1.9rem);
-  background: #000000;
+  background: #FFFFFF;
 }
 
 .c4 {
@@ -49,11 +64,11 @@ exports[`<ToggleTheme /> should render input and toggle between theme when toggl
   left: 0;
   right: 0;
   bottom: 0;
-  background: #DDDDDD;
+  background: #f9f9f9;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   border-radius: 2rem;
-  box-shadow: 0 0 1px solid #000000;
+  box-shadow: 0 0 1px solid #FFFFFF;
 }
 
 .c4:before {
@@ -63,7 +78,7 @@ exports[`<ToggleTheme /> should render input and toggle between theme when toggl
   width: 2.1rem;
   left: 0.4rem;
   bottom: 0.1rem;
-  background: #333333;
+  background: #F9f9f9;
   border-radius: 50%;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -87,6 +102,5 @@ exports[`<ToggleTheme /> should render input and toggle between theme when toggl
       />
     </label>
   </div>
-  ;
 </div>
 `;

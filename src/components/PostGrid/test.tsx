@@ -16,7 +16,9 @@ describe('<PostGrid />', () => {
   it('should render three posts', () => {
     const { container } = renderTheme(<PostGrid {...props} />);
 
-    expect(screen.queryByText(/Nenhum post/i)).not.toBeInTheDocument();
+    expect(
+      screen.queryByText(/Nenhum post encontrado!/i),
+    ).not.toBeInTheDocument();
 
     expect(screen.getAllByRole('heading')).toHaveLength(3);
     expect(screen.getAllByRole('img')).toHaveLength(3);

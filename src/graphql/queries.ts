@@ -3,6 +3,7 @@ import { GRAPHQL_FRAGMENTS } from './fragments';
 
 export const GRAPHQL_QUERY = gql`
   ${GRAPHQL_FRAGMENTS}
+
   query GET_POSTS(
     $categorySlug: String
     $postSlug: String
@@ -16,6 +17,7 @@ export const GRAPHQL_QUERY = gql`
     setting {
       ...settings
     }
+
     posts(
       start: $start
       limit: $limit
@@ -27,7 +29,6 @@ export const GRAPHQL_QUERY = gql`
           { content_contains: $postSearch }
           { excerpt_contains: $postSearch }
         ]
-        title_contains: $postSearch
         categories: { slug: $categorySlug }
         author: { slug: $authorSlug }
         tags: { slug: $tagSlug }

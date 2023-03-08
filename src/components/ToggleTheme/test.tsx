@@ -1,7 +1,7 @@
+import { fireEvent, screen } from '@testing-library/react';
 import { renderTheme } from '../../styles/render-theme';
 import { ToggleTheme } from '.';
 import { theme } from '../../styles/theme';
-import { fireEvent, screen } from '@testing-library/react';
 
 describe('<ToggleTheme />', () => {
   beforeEach(() => {
@@ -32,8 +32,9 @@ describe('<ToggleTheme />', () => {
     expect(input).not.toBeChecked();
   });
 
-  it('should render checked input with inverted theme', () => {
+  it('should render input checked with inverted theme', () => {
     renderTheme(<ToggleTheme />);
+
     expect(screen.getByRole('checkbox')).toBeChecked();
   });
 

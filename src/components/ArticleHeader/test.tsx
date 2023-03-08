@@ -1,9 +1,9 @@
 import { screen } from '@testing-library/react';
-import { ArticleHeader, ArticleHeaderProps } from '.';
 import { renderTheme } from '../../styles/render-theme';
-import { formatDate } from '../../utils/format.data';
+import { ArticleHeader, ArticleHeaderProps } from '.';
 
 import mock from './mock';
+import { formatDate } from '../../utils/format.data';
 
 const props: ArticleHeaderProps = mock;
 
@@ -14,7 +14,6 @@ describe('<ArticleHeader />', () => {
     expect(
       screen.getByRole('heading', { name: props.title }),
     ).toBeInTheDocument();
-
     expect(screen.getByRole('img', { name: props.title })).toBeInTheDocument();
     expect(screen.getByText(props.excerpt)).toBeInTheDocument();
     expect(screen.getByText(formatDate(props.createdAt))).toBeInTheDocument();

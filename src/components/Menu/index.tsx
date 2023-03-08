@@ -6,7 +6,7 @@ import { Close as CloseIcon } from '@styled-icons/material-outlined/Close';
 
 import { LogoLink } from '../LogoLink';
 import { MenuLink } from '../MenuLink';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 export type MenuPropsLinks = {
   id: string;
@@ -21,8 +21,8 @@ export type MenuProps = {
   logo: string;
 };
 
-export const Menu = ({ links, blogName, logo }: MenuProps) => {
-  const [menuVisible, setMenuVisible] = useState(true);
+export const Menu = ({ links = [], blogName, logo }: MenuProps) => {
+  const [menuVisible, setMenuVisible] = useState(false);
 
   const handleOpenCloseMenu = (event: React.MouseEvent) => {
     event.preventDefault();
